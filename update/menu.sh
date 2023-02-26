@@ -180,7 +180,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 echo -e " [ ${GREEN}SSH WebSocket${NC} : ${GREEN}ON ]${NC}     [ ${GREEN}XRAY${NC} : ${status_xray} ]      [ ${GREEN}NGINX${NC} : ${status_nginx} ]"
 echo -e "$COLOR1─────────────────────────────────────────────────────────────${NC}"
-echo -e "□ ${GREEN}AutoScript By ARH-PROJECT ${NC} :${BLUE} t.me/ridwanstore112${NC}"
+echo -e "□ ${GREEN}AutoScript By ARH-PROJECT ${NC}    :${BLUE} t.me/ridwanstore112${NC}"
 echo -e "□ ${GREEN}Patner Mg Store ${NC}              :${BLUE} t.me/kangbakso456${NC}"
 echo -e "□ ${GREEN}Ridwan Store. ${NC}                :${BLUE} t.me/r1f4n_1122${NC}"
 echo -e "□ ${GREEN}Geo Projek  ${NC}                  :${BLUE} t.me/tau_samawa ${NC}"
