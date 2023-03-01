@@ -260,7 +260,7 @@ wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/websocket/insshws.
 clear
 wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
-#wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/slowdnss/install-sldns.sh && chmod +x install-sldns.sh && ./install-sldns.sh
+wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/slowdnss/install-sldns.sh && chmod +x install-sldns.sh && ./install-sldns.sh
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
