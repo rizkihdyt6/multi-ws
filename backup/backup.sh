@@ -10,7 +10,7 @@ COLBG1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ /
 ###########- END COLOR CODE -##########
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -28,7 +28,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -45,7 +45,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -75,7 +75,7 @@ date=$(date +"%Y-%m-%d")
 #itoken=$(curl -sS https://raw.githubusercontent.com/SSHSEDANG4/update/main/asu)
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-NameUser=$(curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+NameUser=$(curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 
 
 clear
@@ -111,7 +111,7 @@ zip -rP $InputPass $NameUser.zip backup > /dev/null 2>&1
 ##############++++++++++++++++++++++++#############
 LLatest=`date`
 Get_Data () {
-git clone https://github.com/myridwan/backup.git /root/user-backup/ &> /dev/null
+git clone https://github.com/rizkihdyt6/backup.git /root/user-backup/ &> /dev/null
 }
 
 Mkdir_Data () {
@@ -131,14 +131,14 @@ mv /root/$NameUser.zip /root/user-backup/$NameUser/
 Save_And_Exit () {
     DATE=$(date +'%d %B %Y')
     cd /root/user-backup
-    git config --global user.email "alnurridwan112@gmail.com" &> /dev/null
-    git config --global user.name "myridwan" &> /dev/null
+    git config --global user.email "admin@hdyt.me" &> /dev/null
+    git config --global user.name "RizkiHdyt" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m backup &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/myridwan/backup
+    git remote add origin https://github.com/rizkihdyt6/backup
     git push -f https://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@github.com/myridwan/backup.git &> /dev/null
 }
 
