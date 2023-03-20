@@ -7,7 +7,7 @@ REPO="https://raw.githubusercontent.com/myridwan/scriptvps/ipuk/"
 
 ###
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -23,9 +23,9 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-# https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip 
+# https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -42,7 +42,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/MyRidwan/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/rizkihdyt6/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -116,7 +116,7 @@ if [ "" = "$PKG_OK" ]; then
   echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] Notes, Script Mod By ARH-PROJECT"
+  echo -e "[ ${tyblue}NOTES${NC} ] Notes, Script Mod By RIZKIHDYT-PROJECT"
   echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now.."
   read
 else
@@ -260,18 +260,18 @@ EOF
 echo -e "$green[INFO]$NC Install SSH"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "$green[INFO]$NC Install XRAY!"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
 ### Pasang SlowDNS
 function install_slowdns(){
@@ -285,7 +285,7 @@ function install_slowdns(){
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
-wget https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
 clear
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 clear
@@ -314,7 +314,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/myridwan/multi-ws/ipuk/version  )
+serverV=$( curl -sS https://raw.githubusercontent.com/rizkihdyt6/multi-ws/ipuk/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -327,7 +327,7 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 
 echo " "
-echo "=====================-[ AutoScript Arh-Project ]-===================="
+echo "=====================-[ AutoScript RizkiHdyt-Project ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -372,7 +372,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script ARH-PROJECT  ]-==============="
+echo "===============-[ Script RizkiHdyt-PROJECT  ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
